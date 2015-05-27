@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FAAC58" >
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Time Left"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timeLabel"
+            android:layout_below="@+id/timeLabel"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textColor="#FF5722"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DurLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Duration"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timer"
+            android:layout_alignBottom="@+id/timer"
+            android:layout_alignLeft="@+id/DurLabel"
+            android:text="  60 min"
+            android:textSize="20sp"
+            android:textColor="#FF5722"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+	   <ScrollView 
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:scrollbars="none"
+        android:layout_marginBottom="67dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="24dp">
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+	  <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="TextView" />
+		<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_marginLeft="200dp"/>    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="570dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/question"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dp" >
+	
+    <RelativeLayout
+	    android:id="@+id/linear"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton2" />
+         <ImageView 
+			android:id="@+id/opImage1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/option1"
+        	android:layout_marginLeft="35dp"/>
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/option1"
+            android:layout_marginLeft="15dp"
+            android:text="RadioButton3" />
+        <ImageView 
+			android:id="@+id/opImage3"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/option1"
+        	android:layout_below="@+id/option3"
+        	android:layout_marginLeft="35dp"/>
+	</RelativeLayout>
+	<RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/linear"
+	    android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton2" />
+		 <ImageView 
+			android:id="@+id/opImage2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/option2"
+        	android:layout_marginLeft="35dp"/>
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/option2"
+            android:text="RadioButton4" />
+        <ImageView 
+			android:id="@+id/opImage4"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/option2"
+        	android:layout_below="@+id/option4"
+        	android:layout_marginLeft="35dp"/>
+
+     </RelativeLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+   
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/scroll"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_general"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/submit"
+        android:background="@drawable/button_general"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text=" Previous " />
+     
+    <Button
+        android:id="@+id/next"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/previous"
+        android:background="@drawable/button_general"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text=" Next " />
+
+
+    <Button
+        android:id="@+id/summary"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+ 		android:layout_marginLeft="15dp"
+ 		android:layout_toRightOf="@+id/next"
+ 		android:background="@drawable/button_general"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="Summary" />
+
+    <Button
+        android:id="@+id/unanswered"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/summary"
+        android:background="@drawable/button_general"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text=" Unanswered " />
+	 
+   
+</RelativeLayout>

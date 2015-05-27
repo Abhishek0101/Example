@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background" >
+    	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Candidate ID:"
+            android:textColor="#2E7D32"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/candiID"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#2E7D32" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/candiID"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_general"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

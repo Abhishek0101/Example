@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">SkillAhead</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="title_activity_second">Second</string>
+
+    <string-array name="MFS100Ver">
+        <item>31</item>
+        <item>41</item>
+    </string-array>
+
+    <string name="title_activity_preference">PreferenceActivity</string>
+    
+    <string name="logprint">ON</string>
+    <!-- <string name="logprint">OFF</string> -->
+    
+     <string name="tostdisplay">ON</string>
+     
+     <!-- <string name="tostdisplay">OFF</string> -->
+    
+
+      
+      
+        <!-- From 29th onwards new servlet url to upload videos and xml files. "Upload_URL" for uploading videos and "response_URL" for uploading xml file    --> 
+    	<string name="Upload_URL">http://bubalo.com:8080/eResponseMedia</string>
+        <string name="response_URL">http://bubalo.com:8080/Response</string>
+        
+   
+    -->
+      
+     
+   
+	
+	<string name="sdcardpath">/sdcard/data/.v/</string>
+	
+	
+	<!--  <string name="webservice_request_URL">http://navriti.certiplate.com:54322/json/syncreply/GetScheduleDataRequest?Id=</string> -->	
+	<!-- upto dec 24th they use this url  <string name="webservice_request_URL">http://navriti.certiplate.com:54322/json/syncreply/GetScheduleDataRequest?Id=09876=U2csFmR8FERHdETH10VQJURPB1VCpUQJtUQ54321</string> -->
+	
+	<string name="webservice_request_URL">http://bubalo.com:54322/json/syncreply/GetScheduleData</string>
+	<!--  upto dec 24th they use this url <string name="webservice_responsedata_URL">http://navriti.certiplate.com:54322/json/syncreply/SaveResponseData?ResponseData=</string> -->
+	<string name="webservice_responsedata_URL">http://bubalo.com:54322/json/syncreply/SaveResponseData?ResponseData=</string>
+	
+</resources>
